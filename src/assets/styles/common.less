@@ -1,0 +1,62 @@
+.full{
+  height:100%;
+  width:100%;
+}
+
+.full-absolute{
+  position: absolute!important;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.text-right{
+  text-align: right
+}
+
+.text-left{
+  text-align: left
+}
+
+.text-center{
+  text-align: center
+}
+
+
+.form-title{
+  font-size:16px;
+  font-weight: bold;
+}
+
+.no-padding{
+  padding: 0!important;
+}
+
+.no-margin{
+  margin: 0!important;
+}
+
+/*
+* 报表中用到的样式，使用flex布局
+*/
+.base-item {
+  height: 40px;
+  border-bottom: 1px solid rgb(223, 230, 236);
+  line-height: 20px;
+  align-items: center;
+  display: flex;
+}
+.item {
+  .base-item;
+  justify-content: center;
+}
+.item-right{
+  .base-item;
+  justify-content:center;
+ 
+}
+.item-sum{
+  .item-right;
+  font-weight:bold;
+}
