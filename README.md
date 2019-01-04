@@ -1,13 +1,4 @@
-# 四川锦程项目
-## [贷后催收管理系统--四川锦程](http://117.36.75.166:3000/pangolin/pangolin-web-v2-scJinCheng.git)
-  > A Vue.js project
-  > 对应后端2.2.3
 
-### 项目说明
-  > 负责人：杜超
-  > 开始日期：2018年6月20日
-
----
 ## 代码编写规范
 
 #### 项目业务框架分为页面部分和组件部分。
@@ -95,7 +86,7 @@ export class AccTelPoolService extends Service {
    * 电催页面新增联系人电话或邮箱地址
    */
   @Debounce()
-  savePersonalContactPhone(data) { 
+  savePersonalContactPhone(data) {
     // 参数根据action 的实际情况定义
     return this.netService.send({
       server: businessService.accTelPoolController.savePersonalContactPhone,
